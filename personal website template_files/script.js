@@ -1,10 +1,21 @@
 $(document).ready(function(){
-    $("signup-form").validate({
+    console.log("hello")
+    $("#signup-form").validate({
         rules:{
             yourname:{
                 required:true,
                 minlength:4
-            } 
+            }, 
+            emailAddress:{
+                required:true,
+                email:true
+            },
+            subject:{
+                required:true,
+            },
+            message:{
+                required:true,
+            }
         }
     })
 })
